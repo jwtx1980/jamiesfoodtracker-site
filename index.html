@@ -3,16 +3,29 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Jamie's Food Tracker</title>
+    <title>Jamie's Food Tracker | Simple AI Food Tracking</title>
     <meta
       name="description"
-      content="A simpler way to log meals, estimate calories, and keep track of macros."
+      content="Simple AI-powered food tracking. Snap a photo or type what you ate to get instant calorie and macro estimates."
     >
+    <meta property="og:title" content="Jamie's Food Tracker">
+    <meta
+      property="og:description"
+      content="Simple AI-powered food tracking for calories, macros, meal photos, and quick edits."
+    >
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jamiesfoodtracker.com/">
+    <meta property="og:image" content="https://jamiesfoodtracker.com/Images/7m0nS.jpg">
+    <link rel="icon" href="/Images/play_store_512.png">
+    <link rel="apple-touch-icon" href="/Images/play_store_512.png">
     <link rel="stylesheet" href="/styles.css">
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="/">Jamie's Food Tracker</a>
+      <a class="brand" href="/">
+        <img src="/Images/play_store_512.png" alt="" width="36" height="36">
+        <span>Jamie's Food Tracker</span>
+      </a>
       <nav aria-label="Primary">
         <a href="/privacy/">Privacy</a>
         <a href="/terms/">Terms</a>
@@ -22,33 +35,102 @@
 
     <main class="home">
       <section class="hero">
-        <p class="eyebrow">Private Android beta</p>
-        <h1>Jamie's Food Tracker</h1>
-        <p class="subheadline">
-          A simpler way to log meals, estimate calories, and keep track of macros.
-        </p>
-        <p>
-          Jamie's Food Tracker helps users log food with text, photos, and
-          manual entries. The app can estimate calories, protein, carbs, and
-          fat, then lets users revise estimates or adjust meals with leftover
-          photos.
-        </p>
-        <p class="beta-note">Available for private beta testing on Android.</p>
+        <div class="hero-copy">
+          <img class="app-icon" src="/Images/play_store_512.png" alt="" width="72" height="72">
+          <p class="eyebrow">Private Android beta</p>
+          <h1>Jamie's Food Tracker</h1>
+          <p class="subheadline">
+            Simple AI-powered food tracking. Snap a photo or type what you ate.
+            Get instant calorie and macro estimates.
+          </p>
+          <form class="beta-form" action="mailto:support@jamiesfoodtracker.com" method="post" enctype="text/plain">
+            <label class="sr-only" for="beta-email">Email address</label>
+            <input id="beta-email" name="email" type="email" placeholder="you@example.com" autocomplete="email">
+            <button type="submit">Join Private Android Beta</button>
+          </form>
+          <p class="beta-note">Currently in private beta &bull; Android only</p>
+        </div>
+
+        <div class="hero-visual" aria-label="App preview">
+          <div class="phone-frame main-phone">
+            <img src="/Images/7m0nS.jpg" alt="Jamie's Food Tracker app showing daily calories, macro bars, breakfast, and coffee meal cards.">
+          </div>
+        </div>
       </section>
 
-      <section class="link-grid" aria-label="Important pages">
-        <a href="/privacy/">
-          <span>Privacy Policy</span>
-          <p>How user data is collected, used, shared, and protected.</p>
-        </a>
-        <a href="/terms/">
-          <span>Terms of Use</span>
-          <p>The basic rules for using Jamie's Food Tracker.</p>
-        </a>
-        <a href="/support/">
-          <span>Support</span>
-          <p>Contact information for help, privacy questions, and data deletion requests.</p>
-        </a>
+      <section class="preview-section" aria-labelledby="preview-title">
+        <div class="section-heading">
+          <p class="eyebrow">App preview</p>
+          <h2 id="preview-title">Clean, simple, and actually useful</h2>
+        </div>
+        <div class="preview-grid">
+          <div class="phone-frame preview-phone crop-top">
+            <img src="/Images/7m0nS.jpg" alt="Daily calorie and macro progress in Jamie's Food Tracker.">
+          </div>
+          <div class="phone-frame preview-phone crop-meal">
+            <img src="/Images/7m0nS.jpg" alt="Meal photo card in Jamie's Food Tracker.">
+          </div>
+          <div class="phone-frame preview-phone crop-coffee">
+            <img src="/Images/7m0nS.jpg" alt="Coffee photo card in Jamie's Food Tracker.">
+          </div>
+        </div>
+      </section>
+
+      <section class="steps-section" aria-labelledby="steps-title">
+        <div class="section-heading">
+          <p class="eyebrow">How it works</p>
+          <h2 id="steps-title">Food logging without the drag</h2>
+        </div>
+        <div class="steps-grid">
+          <article>
+            <span>1</span>
+            <h3>Log Easily</h3>
+            <p>Use a photo, text description, or quick manual entry when you already know what you ate.</p>
+          </article>
+          <article>
+            <span>2</span>
+            <h3>Smart AI Estimates</h3>
+            <p>Get calories, protein, carbs, fat, and a confidence level to help you review the estimate.</p>
+          </article>
+          <article>
+            <span>3</span>
+            <h3>Review & Adjust</h3>
+            <p>Edit meals anytime, revise estimates, and use leftover photos to keep tracking practical.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="features-section" aria-labelledby="features-title">
+        <div class="section-heading">
+          <p class="eyebrow">Features</p>
+          <h2 id="features-title">Built for calm, everyday tracking</h2>
+        </div>
+        <div class="feature-list">
+          <article>
+            <h3>Photo + Text Food Logging</h3>
+            <p>Capture meals the way they happen, with photos, text, or quick entries.</p>
+          </article>
+          <article>
+            <h3>AI Calorie & Macro Estimation</h3>
+            <p>Estimate calories, protein, carbs, and fat without building every meal from scratch.</p>
+          </article>
+          <article>
+            <h3>Clear Daily Progress</h3>
+            <p>Macro bars and daily totals make your progress easy to scan.</p>
+          </article>
+          <article>
+            <h3>Confidence Indicators</h3>
+            <p>Medium and high confidence signals help you know when to trust or adjust an estimate.</p>
+          </article>
+          <article>
+            <h3>Distraction-Free Interface</h3>
+            <p>A quiet layout keeps the focus on meals, progress, and simple edits.</p>
+          </article>
+          <article>
+            <h3>Strong Privacy Focus</h3>
+            <p>Privacy, support, and account deletion information are easy to find.</p>
+          </article>
+        </div>
       </section>
     </main>
 
