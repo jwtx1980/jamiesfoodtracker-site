@@ -27,6 +27,7 @@
         <span>Jamie's Food Tracker</span>
       </a>
       <nav aria-label="Primary">
+        <a href="/#beta-signup">Beta Signup</a>
         <a href="/privacy/">Privacy</a>
         <a href="/terms/">Terms</a>
         <a href="/support/">Support</a>
@@ -43,11 +44,10 @@
             Simple AI-powered food tracking. Snap a photo or type what you ate.
             Get instant calorie and macro estimates.
           </p>
-          <form class="beta-form" action="mailto:support@jamiesfoodtracker.com" method="post" enctype="text/plain">
-            <label class="sr-only" for="beta-email">Email address</label>
-            <input id="beta-email" name="email" type="email" placeholder="you@example.com" autocomplete="email">
-            <button type="submit">Join Private Android Beta</button>
-          </form>
+          <div class="hero-actions">
+            <a class="button primary" href="#beta-signup">Join Private Android Beta</a>
+            <a class="button secondary" href="#how-it-works">See how it works</a>
+          </div>
           <p class="beta-note">Currently in private beta &bull; Android only</p>
         </div>
 
@@ -76,7 +76,63 @@
         </div>
       </section>
 
-      <section class="steps-section" aria-labelledby="steps-title">
+      <section class="signup-section" id="beta-signup" aria-labelledby="signup-title">
+        <div class="section-heading">
+          <p class="eyebrow">Beta signup</p>
+          <h2 id="signup-title">Join the private Android beta</h2>
+          <p>
+            Send a quick request and we will follow up with next steps when beta
+            spots are available.
+          </p>
+        </div>
+        <div class="signup-layout">
+          <form class="beta-form" id="beta-form">
+            <div class="field-group">
+              <label for="beta-email">Email address</label>
+              <input id="beta-email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+            </div>
+            <div class="field-group">
+              <label for="beta-name">Name</label>
+              <input id="beta-name" name="name" type="text" placeholder="Jamie" autocomplete="name">
+            </div>
+            <div class="field-group">
+              <label for="beta-device">Android device</label>
+              <input id="beta-device" name="device" type="text" placeholder="Pixel 8, Galaxy S24, etc." autocomplete="off">
+            </div>
+            <div class="field-group">
+              <label for="beta-notes">What would you like to test?</label>
+              <textarea id="beta-notes" name="notes" rows="4" placeholder="Photo meals, manual entries, leftover photos, macro tracking..."></textarea>
+            </div>
+            <label class="check-field">
+              <input id="beta-privacy" name="privacy" type="checkbox" required>
+              <span>I understand this opens an email request and I have reviewed the <a href="/privacy/">Privacy Policy</a>.</span>
+            </label>
+            <button type="submit">Create Beta Request Email</button>
+            <p class="form-note">
+              This site does not store signup form entries. Your email app will
+              open with a prefilled request to support.
+            </p>
+          </form>
+
+          <aside class="signup-card" aria-label="Beta request steps">
+            <h3>What happens next</h3>
+            <ol>
+              <li>You send a beta request email.</li>
+              <li>We review Android device fit and available beta spots.</li>
+              <li>If selected, you receive private beta access instructions.</li>
+            </ol>
+            <div class="signup-status" id="signup-status" role="status" aria-live="polite" hidden>
+              <h3>Email draft created</h3>
+              <p>
+                Review the message in your email app, send it, and watch for a
+                reply from support@jamiesfoodtracker.com.
+              </p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="steps-section" id="how-it-works" aria-labelledby="steps-title">
         <div class="section-heading">
           <p class="eyebrow">How it works</p>
           <h2 id="steps-title">Food logging without the drag</h2>
@@ -148,5 +204,6 @@
         <a href="/delete-account/">Delete Account</a>
       </nav>
     </footer>
+    <script src="/signup.js"></script>
   </body>
 </html>
